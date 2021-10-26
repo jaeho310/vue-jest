@@ -1,4 +1,4 @@
-import HelloWorld from './HelloWorld.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
 import Vue from 'vue'
 
 let Constructor
@@ -9,6 +9,5 @@ test('HelloWorld Test', () => {
   Constructor = Vue.extend(HelloWorld)
   vm = new Constructor().$mount()
   abc = vm._data.abc
-  console.log(abc)
-  expect(true).toBe(true);
+  expect(abc).toBe(100);
 });

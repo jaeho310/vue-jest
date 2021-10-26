@@ -38,7 +38,7 @@ export default {
   },
   data() {
     return {
-      abc: 1
+      abc: 100
     }
   },
 }
